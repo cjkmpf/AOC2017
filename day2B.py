@@ -1,8 +1,6 @@
 def divide_row(row):
     for n in range(0, len(row)):
         for i in range(n+1, len(row)):
-            if n == i:
-                continue
             if row[n] % row[i] == 0:
                 return row[n]/row[i]
             if row[i] % row[n] == 0:
